@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace xaim\ValidateMyKad;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use xaim\ValidateMyKad\Commands\ValidateMyKadCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class ValidateMyKadServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('validate-my-kad')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_validate-my-kad_table')
+            ->hasCommand(ValidateMyKadCommand::class);
     }
 }
