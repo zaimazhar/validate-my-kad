@@ -2,6 +2,4 @@
 
 namespace xaim\ValidateMyKad;
 
-class ValidateMyKad {
-    
-}
+class ValidateMyKad {}
